@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6f0ca5">
+  <title>Skin to Smiles Multispeciality | Care that makes you smile</title>
+  <meta name="description"
+    content="Dental, homeopathy, cosmetology and counselling psychology care at Skin to Smiles Multispeciality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .appointment-form .consent-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .appointment-form .consent-note input {
+      display: inline-block;
+      flex: 0 0 auto;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      accent-color: #7410a5;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Skin to Smiles home">
+      <img class="brand-logo" src="/assets/logo.jpeg" alt="Skin to Smiles clinic logo"><span><b>Skin to
+          Smiles</b><small>MULTISPECIALITY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Departments</a><a
+        href="#hours">Hours</a><a class="nav-cta" href="#appointment">Book Appointment <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> YOUR WELLNESS, OUR PRIORITY</span>
+        <h1>Care that helps<br><em>you glow</em> from within.</h1>
+        <p>Thoughtful care for your smile, skin and overall wellbeing — all under one roof.</p>
+        <div class="hero-actions"><a class="button button-light" href="#appointment">Book a visit <span>→</span></a><a
+            class="text-link" href="#services">Explore our care <span>↗</span></a></div>
+        <div class="hero-note"><span class="note-icon">✳</span><span><b>4 care departments</b><small>One welcoming
+              clinic</small></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-blob"></div>
+        <div class="art-card">
+          <div class="art-sun">✦</div>
+          <div class="face-art"><span class="hair"></span><span class="face"></span><span class="neck"></span></div>
+          <div class="art-caption">A little care.<br><b>A brighter you.</b></div>
+        </div>
+        <div class="floating-pill pill-top">♡ Compassion first</div>
+        <div class="floating-pill pill-bottom">✧ Feel good, every day</div>
+      </div>
+      <div class="hero-bottom">
+        <span>Dental</span><b>•</b><span>Homeopathy</span><b>•</b><span>Cosmetology</span><b>•</b><span>Counselling
+          Psychology</span>
+      </div>
+    </section>
+    <section class="welcome section" id="about">
+      <div class="welcome-visual">
+        <div class="welcome-circle"><span>✦</span><strong>Care<br>with a<br>human touch.</strong><small>SKIN TO
+            SMILES</small></div>
+        <div class="mini-stamp">YOUR HEALTH<br>MATTERS</div>
+      </div>
+      <div class="welcome-copy"><span class="eyebrow purple">HELLO, AND WELCOME</span>
+        <h2>More than a clinic.<br><em>A place to feel cared for.</em></h2>
+        <p>At Skin to Smiles Multispeciality, we bring different areas of care together with a warm, patient-first
+          approach. Whether you are visiting for dental care, skin wellness or emotional support, we want you to feel
+          heard, comfortable and informed.</p>
+        <p class="muted">Our team will help guide you to the department that best fits your needs.</p><a
+          class="under-link" href="#appointment">Plan your visit <span>→</span></a>
+      </div>
+    </section>
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <div><span class="eyebrow purple">OUR DEPARTMENTS</span>
+          <h2>Care for every<br><em>part of you.</em></h2>
+        </div>
+        <p>Explore our areas of care and send an appointment request with the department you need.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card dental">
+          <div class="service-icon">✧</div><span class="service-number">01 / DENTAL</span>
+          <h3>Dental Care</h3>
+          <p>Support for a healthy, confident smile with attentive dental care.</p><a href="#appointment"
+            data-dept="Dental">Request a visit <span>↗</span></a>
+          <div class="card-deco">✳</div>
+        </article>
+        <article class="service-card homeo">
+          <div class="service-icon">❋</div><span class="service-number">02 / HOMEOPATHY</span>
+          <h3>Homeopathy</h3>
+          <p>Individual consultations focused on listening to your health concerns.</p><a href="#appointment"
+            data-dept="Homeopathy">Request a visit <span>↗</span></a>
+          <div class="card-deco">✿</div>
+        </article>
+        <article class="service-card cosmo">
+          <div class="service-icon">✦</div><span class="service-number">03 / COSMETOLOGY</span>
+          <h3>Cosmetology</h3>
+          <p>Personalised skin and aesthetic consultations in a welcoming setting.</p><a href="#appointment"
+            data-dept="Cosmetology">Request a visit <span>↗</span></a>
+          <div class="card-deco">✧</div>
+        </article>
+        <article class="service-card counsel">
+          <div class="service-icon">☼</div><span class="service-number">04 / COUNSELLING</span>
+          <h3>Counselling Psychology</h3>
+          <p>A supportive space to talk, reflect and explore emotional wellbeing.</p><a href="#appointment"
+            data-dept="Counselling Psychology">Request a visit <span>↗</span></a>
+          <div class="card-deco">♡</div>
+        </article>
+      </div>
+    </section>
+    <section class="appointment section" id="appointment">
+      <div class="appointment-info"><span class="eyebrow">LET'S GET YOU STARTED</span>
+        <h2>Your next step<br>starts with a <em>hello.</em></h2>
+        <p>Fill in the form and our clinic team can follow up to coordinate your visit. This form is an appointment
+          request, not a confirmed booking.</p>
+        <div class="contact-line"><span>☎</span>
+          <div><small>CALL THE CLINIC</small><a href="tel:+917358495406">+91 73584 95406</a></div>
+        </div>
+        <div class="contact-line"><span>◷</span>
+          <div><small>CONSULTING HOURS</small><b>Monday – Sunday</b>
+            <p>9:00 AM – 1:00 PM<br>5:00 PM – 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <form class="appointment-form" id="appointmentForm">
+        <div class="form-heading"><span class="eyebrow purple">APPOINTMENT REQUEST</span>
+          <h3>Tell us a little about you</h3>
+          <p>Fields marked * are required.</p>
+        </div>
+        <label>Full name *<input name="name" placeholder="Your name" required maxlength="80"></label>
+        <label>Phone number *<input name="phone" type="tel" placeholder="+91 98765 43210" required
+            maxlength="25"></label>
+        <div class="form-row"><label>Department *<select name="department" required>
+              <option value="">Choose department</option>
+              <option>Dental</option>
+              <option>Homeopathy</option>
+              <option>Cosmetology</option>
+              <option>Counselling Psychology</option>
+            </select></label>
+          <label>Preferred date *<input name="date" type="date" id="visitDate" required></label>
+        </div>
+        <label>Preferred time *<select name="time" required>
+            <option value="">Choose a time</option>
+            <option>9:00 AM – 1:00 PM</option>
+            <option>5:00 PM – 9:00 PM</option>
+          </select></label>
+        <label>Anything you'd like us to know? <textarea name="message" rows="3" placeholder="Optional message"
+            maxlength="500"></textarea></label>
+        <label class="consent-note"><input name="consent" type="checkbox" required>
+          I agree that the clinic may use these details to respond to my appointment request.</label>
+        <button class="button button-primary" type="submit" id="submitBtn">Send appointment request
+          <span>→</span></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+        <small class="privacy-note">Your contact and appointment details will be stored for follow-up and sent to the
+          clinic by email. This is a request, not a confirmed booking. Please do not include sensitive medical details.
+          For questions, call <a href="tel:+917358495406">+91 73584 95406</a>.</small>
+      </form>
+    </section>
+    <section class="hours section" id="hours">
+      <div><span class="eyebrow purple">WE'RE HERE FOR YOU</span>
+        <h2>Make time for<br><em>your wellbeing.</em></h2>
+      </div>
+      <div class="hours-panel">
+        <div><span>Every day</span><b>Monday to Sunday</b></div>
+        <div><span>Morning</span><b>9:00 AM – 1:00 PM</b></div>
+        <div><span>Evening</span><b>5:00 PM – 9:00 PM</b></div><a href="tel:+917358495406">Call +91 73584 95406
+          <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><img class="brand-logo" src="/assets/logo.jpeg"
+        alt="Skin to Smiles clinic logo"><span><b>Skin to Smiles</b><small>MULTISPECIALITY</small></span></a>
+    <p>Dental · Homeopathy · Cosmetology · Counselling Psychology</p><small>© <span id="year"></span> Skin to Smiles
+      Multispeciality. All rights reserved.</small>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+
+</html>
