@@ -12,31 +12,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <style>
-    .appointment-form .consent-note {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-    .appointment-form .consent-note input {
-      display: inline-block;
-      flex: 0 0 auto;
-      width: auto;
-      margin: 0;
-      padding: 0;
-      accent-color: #7410a5;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Skin to Smiles home">
-      <img class="brand-logo" src="/assets/logo.jpeg" alt="Skin to Smiles clinic logo"><span><b>Skin to
+      <img class="brand-logo" src="assets/logo.jpeg" alt="Skin to Smiles clinic logo"><span><b>Skin to
           Smiles</b><small>MULTISPECIALITY</small></span>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
@@ -97,29 +79,29 @@
         <article class="service-card dental">
           <div class="service-icon">✧</div><span class="service-number">01 / DENTAL</span>
           <h3>Dental Care</h3>
-          <p>Support for a healthy, confident smile with attentive dental care.</p><a href="#appointment"
-            data-dept="Dental">Request a visit <span>↗</span></a>
+          <p>Support for a healthy, confident smile with attentive dental care.</p><a href="tel:+917358495406"
+            aria-label="Call the clinic to request a dental visit">Call to request a visit <span>↗</span></a>
           <div class="card-deco">✳</div>
         </article>
         <article class="service-card homeo">
           <div class="service-icon">❋</div><span class="service-number">02 / HOMEOPATHY</span>
           <h3>Homeopathy</h3>
-          <p>Individual consultations focused on listening to your health concerns.</p><a href="#appointment"
-            data-dept="Homeopathy">Request a visit <span>↗</span></a>
+          <p>Individual consultations focused on listening to your health concerns.</p><a href="tel:+917358495406"
+            aria-label="Call the clinic to request a homeopathy visit">Call to request a visit <span>↗</span></a>
           <div class="card-deco">✿</div>
         </article>
         <article class="service-card cosmo">
           <div class="service-icon">✦</div><span class="service-number">03 / COSMETOLOGY</span>
           <h3>Cosmetology</h3>
-          <p>Personalised skin and aesthetic consultations in a welcoming setting.</p><a href="#appointment"
-            data-dept="Cosmetology">Request a visit <span>↗</span></a>
+          <p>Personalised skin and aesthetic consultations in a welcoming setting.</p><a href="tel:+917358495406"
+            aria-label="Call the clinic to request a cosmetology visit">Call to request a visit <span>↗</span></a>
           <div class="card-deco">✧</div>
         </article>
         <article class="service-card counsel">
           <div class="service-icon">☼</div><span class="service-number">04 / COUNSELLING</span>
           <h3>Counselling Psychology</h3>
-          <p>A supportive space to talk, reflect and explore emotional wellbeing.</p><a href="#appointment"
-            data-dept="Counselling Psychology">Request a visit <span>↗</span></a>
+          <p>A supportive space to talk, reflect and explore emotional wellbeing.</p><a href="tel:+917358495406"
+            aria-label="Call the clinic to request a counselling psychology visit">Call to request a visit <span>↗</span></a>
           <div class="card-deco">♡</div>
         </article>
       </div>
@@ -127,8 +109,8 @@
     <section class="appointment section" id="appointment">
       <div class="appointment-info"><span class="eyebrow">LET'S GET YOU STARTED</span>
         <h2>Your next step<br>starts with a <em>hello.</em></h2>
-        <p>Fill in the form and our clinic team can follow up to coordinate your visit. This form is an appointment
-          request, not a confirmed booking.</p>
+        <p>Call our clinic team to request a visit. They can help you choose a department and coordinate a convenient
+          time. Appointments are confirmed by the clinic.</p>
         <div class="contact-line"><span>☎</span>
           <div><small>CALL THE CLINIC</small><a href="tel:+917358495406">+91 73584 95406</a></div>
         </div>
@@ -138,39 +120,14 @@
           </div>
         </div>
       </div>
-      <form class="appointment-form" id="appointmentForm">
+      <div class="appointment-form">
         <div class="form-heading"><span class="eyebrow purple">APPOINTMENT REQUEST</span>
-          <h3>Tell us a little about you</h3>
-          <p>Fields marked * are required.</p>
+          <h3>Speak with our clinic</h3>
+          <p>Call us to request your appointment. No information is collected by this website.</p>
         </div>
-        <label>Full name *<input name="name" placeholder="Your name" required maxlength="80"></label>
-        <label>Phone number *<input name="phone" type="tel" placeholder="+91 98765 43210" required
-            maxlength="25"></label>
-        <div class="form-row"><label>Department *<select name="department" required>
-              <option value="">Choose department</option>
-              <option>Dental</option>
-              <option>Homeopathy</option>
-              <option>Cosmetology</option>
-              <option>Counselling Psychology</option>
-            </select></label>
-          <label>Preferred date *<input name="date" type="date" id="visitDate" required></label>
-        </div>
-        <label>Preferred time *<select name="time" required>
-            <option value="">Choose a time</option>
-            <option>9:00 AM – 1:00 PM</option>
-            <option>5:00 PM – 9:00 PM</option>
-          </select></label>
-        <label>Anything you'd like us to know? <textarea name="message" rows="3" placeholder="Optional message"
-            maxlength="500"></textarea></label>
-        <label class="consent-note"><input name="consent" type="checkbox" required>
-          I agree that the clinic may use these details to respond to my appointment request.</label>
-        <button class="button button-primary" type="submit" id="submitBtn">Send appointment request
-          <span>→</span></button>
-        <p class="form-status" id="formStatus" role="status"></p>
-        <small class="privacy-note">Your contact and appointment details will be stored for follow-up and sent to the
-          clinic by email. This is a request, not a confirmed booking. Please do not include sensitive medical details.
-          For questions, call <a href="tel:+917358495406">+91 73584 95406</a>.</small>
-      </form>
+        <a class="button button-primary" href="tel:+917358495406">Call +91 73584 95406 <span>→</span></a>
+        <p class="privacy-note">Monday – Sunday<br>9:00 AM – 1:00 PM · 5:00 PM – 9:00 PM</p>
+      </div>
     </section>
     <section class="hours section" id="hours">
       <div><span class="eyebrow purple">WE'RE HERE FOR YOU</span>
@@ -184,12 +141,12 @@
       </div>
     </section>
   </main>
-  <footer><a class="brand footer-brand" href="#home"><img class="brand-logo" src="/assets/logo.jpeg"
+  <footer><a class="brand footer-brand" href="#home"><img class="brand-logo" src="assets/logo.jpeg"
         alt="Skin to Smiles clinic logo"><span><b>Skin to Smiles</b><small>MULTISPECIALITY</small></span></a>
     <p>Dental · Homeopathy · Cosmetology · Counselling Psychology</p><small>© <span id="year"></span> Skin to Smiles
       Multispeciality. All rights reserved.</small>
   </footer>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
